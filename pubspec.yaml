@@ -63,11 +63,15 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-   - family: Manrope
-     fonts:
-     - asset: assets/fonts/manrope-regular.otf
-     - asset: assets/fonts/manrope-medium.otf
-     - asset: assets/fonts/manrope-light.otf
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/manrope-regular.otf
+        - asset: assets/fonts/manrope-bold.otf
+          weight: 700
+        - asset: assets/fonts/manrope-extrabold.otf
+          weight: 800
+        - asset: assets/fonts/manrope-semibold.otf
+          weight: 400
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
