@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_firebase_messanger/pages/ConversationPageList.dart';
 
 void main() => runApp(MyApp());
 
@@ -44,6 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ConversationPageList()));
+      }),
     );
   }
 }
