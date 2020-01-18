@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:simple_firebase_messanger/pages/ConversationPage.dart';
 
-class  ConversationPageList extends StatefulWidget {
+class ConversationPageList extends StatefulWidget {
   @override
   _ConversationPageListState createState() => _ConversationPageListState();
 }
