@@ -7,12 +7,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Messanger',
-      theme: ThemeData(
-        primarySwatch: Colors.amber,
-      ),
-      home: MyHomePage(title: 'Messanger'),
-    );
+        title: 'Messanger',
+        theme: ThemeData(
+          fontFamily: 'Manrope',
+          primarySwatch: Colors.amber,
+        ),
+        home: ConversationPageList() /* MyHomePage(title: 'Messanger'),*/
+        );
   }
 }
 
@@ -26,8 +27,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,8 +34,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: ConversationPageList(),
-      floatingActionButton: FloatingActionButton(onPressed: (){
-        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ConversationPageList()));
+      floatingActionButton: FloatingActionButton(onPressed: () {
+        Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => ConversationPageList()));
       }),
     );
   }
